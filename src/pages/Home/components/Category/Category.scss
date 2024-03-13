@@ -1,0 +1,26 @@
+.my-category {
+  color: var(--text-normal);
+
+  .bounce {
+    position: relative;
+    top: 0;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      top: -2rem;
+
+      p{
+        transition: all 0.25s ease-in-out;
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+
+    .box {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+}

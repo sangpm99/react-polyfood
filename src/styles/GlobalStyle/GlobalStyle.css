@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif !important;
+    box-sizing: border-box;
+}
+
+.gb-font-size,
+.gb-font-size * {
+    font-size: 1rem !important;
+}
+
+:root {
+    --primary: #5DA88A;
+    --sub-primary: #eef6f3;
+    --secondary: #FF8201;
+    --border: #ccc;
+    --border-lighter: #EFF0F0;
+    --input: #EEF6F3;
+    --size-normal: 1rem;
+    --text: #747372;
+    --text-normal: #1c1c1c;
+    --text-sub: #1a1a1a;
+    --style-sharp: 'Racing Sans One', sans-serif;
+    --white: #fff;
+    --top-nav-distance: 2rem;
+    --header-width: 10rem;
+    --border-color-antd: #d9d9d9;
+    --sub-text: #D6D6D6;
+    --skin: #FBF1EB;
+    --light-skin: #FBF7F2;
+    --light-green: #96C892;
+}
+
+/* Color */
+.link-primary:hover,
+.link-p a:hover,
+.link-active {
+    color: var(--primary);
+}
+
+.sub-text {
+    color: var(--sub-text);
+}
+
+.link-secondary:hover {
+    color: var(--secondary);
+}
+
+.color-primary {
+    color: var(--primary);
+}
+
+.color-secondary {
+    color: var(--secondary);
+}
+
+.color-white-hover:hover {
+    color: var(--white) !important;
+}
+
+.gb-active {
+    color: var(--primary);
+}
+
+.color-text {
+    color: var(--text);
+}
+
+.text-white-hover:hover,
+.text-white-active:active {
+    color: var(--white) !important;
+}
+
+.border-color-antd {
+    border-color: var(--border-color-antd) !important;
+}
+
+.border-primary {
+    border-color: var(--primary);
+}
+
+/* BackGround */
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+.bg-sub-primary {
+    background-color: var(--sub-primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+.secondary-hover:hover {
+    transition: all 0.25s;
+    background-color: var(--secondary) !important;
+}
+
+.bg-login,
+.gb-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-footer {
+    background-color: #212427;
+}
+
+.gb-bg-light-skin {
+    background-color: var(--light-skin);
+}
+
+/* Size */
+.gb-title {
+    font-size: calc(.75 * 60px);
+    color: var(--text-normal);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.gb-sub-title {
+    font-size: 1.1rem;
+    color: var(--text);
+}
+.gb-min-h-full {
+    min-height: 100vh;
+}
+.gap-header {
+    margin-top: var(--header-width);
+}
+.p-body {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.p-3-percent {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.gb-border-bot-2 {
+    border-bottom: 2px solid var(--primary);
+}
+
+/* Style */
+.heading-style {
+    font-family: var(--style-sharp) !important;
+}
+.dancing-style {
+    font-family: "Times New Roman", serif !important;
+    font-weight: 100;
+}
+
+.round {
+    border-radius: 3rem !important;
+}
+
+.rounded-none {
+    border-radius: 0 !important;
+}
+
+/* Opacity */
+.bg-btn:hover {
+    opacity: 0.8;
+}
+
+/* Transition */
+.link-primary:hover,
+.link-secondary:hover {
+    transition: all 0.25s ease;
+}
+
+/* Button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    height: auto;
+}
+
+.btn span {
+    font-size: 1rem;
+}
+
+/* Other */
+::selection {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary,
+.btn-primary:hover {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+    border-color: var(--border-color-antd) !important;
+}
+
+.btn-white-outline,
+.btn-white-outline:hover {
+    background-color: var(--white) !important;
+    color: var(--text) !important;
+    border-color: var(--white) !important;
+}
+
+.gb-tag {
+    color: var(--primary);
+    border-color: var(--primary);
+    background-color: var(--white);
+}
+
+.gb-tag:hover,
+.gb-tag-active {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.ant-drawer {
+    z-index: 10000;
+}
+
+@media (max-width: 1024px) {
+    .gap-header {
+        margin-top: 1rem;
+    }
+
+    .btn span {
+        font-size: 0.7rem;
+    }
+
+    .gb-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .gb-sub-title {
+        font-size: 0.9rem;
+    }
+
+    .p-body {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}

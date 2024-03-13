@@ -1,0 +1,49 @@
+.my-testimonial {
+  padding-left: 10%;
+  padding-right: 10%;
+
+  .box {
+    position: relative;
+    margin: 1rem;
+
+    .img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+    }
+
+    .comment {
+      margin-top: 5rem;
+      padding-top: 6rem;
+      border: 2px dashed var(--primary);
+      border-radius: 2rem;
+    }
+  }
+
+  .flex {
+    display: flex !important;
+  }
+
+  .arrow {
+    top: 50%;
+  }
+
+  .arrow-left {
+    left: 5%;
+
+    @media (max-width: 1024px) {
+      left: 0;
+    }
+  }
+
+  .arrow-right {
+    right: 5%;
+
+    @media (max-width: 1024px) {
+      right: 0;
+    }
+  }
+}

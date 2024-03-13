@@ -1,0 +1,10 @@
+.my-deal {
+  background-repeat: no-repeat;
+  height: 65vh;
+  background-position: left;
+  background-size: cover;
+
+  @media (max-width: 1024px) {
+    height: 20vh;
+  }
+}

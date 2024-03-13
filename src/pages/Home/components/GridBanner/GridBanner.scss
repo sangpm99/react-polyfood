@@ -1,0 +1,33 @@
+.my-grid-banner {
+
+  a {
+    position: relative;
+    padding-bottom: 0.5rem;
+    transition: all 0.25s ease-in-out;
+    font-weight: 500;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 50%;
+      height: 2px;
+      background-color: var(--text-normal);
+      transition: all 0.25s ease-in-out;
+
+      @media (max-width: 1024px) {
+        height: 1px;
+      }
+    }
+
+    &:hover {
+      color: var(--primary);
+    }
+
+    &:hover::after {
+      background-color: var(--primary);
+      right: 0;
+    }
+  }
+}

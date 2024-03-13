@@ -1,0 +1,39 @@
+.my-contact {
+  .box {
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+
+    .icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+
+      svg {
+        transition: all 0.25s ease-in-out;
+        color: var(--primary);
+      }
+    }
+
+    .bg-skin {
+      background-color: #FEE4D7;
+      transition: all 0.25s ease-in-out;
+    }
+
+    &:hover {
+      border: 1px solid var(--primary);
+      svg {
+        color: #FEE4D7 !important;
+      }
+
+      .bg-skin {
+        background-color: var(--primary);
+      }
+    }
+  }
+
+  .map {
+    iframe {
+      width: 100%;
+    }
+  }
+}
