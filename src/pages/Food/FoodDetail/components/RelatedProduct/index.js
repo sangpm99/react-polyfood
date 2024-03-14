@@ -14,7 +14,7 @@ function RelatedProduct({props}) {
                     {
                         products &&
                         products.map((product, index) => (
-                            <Col key={index} className="product-box" span={6}>
+                            <Col key={index} className="product-box" span={24} lg={6}>
                                 <div className="rounded-3xl overflow-hidden relative">
                                     <Link to={`/fooddetail/${product["productId"]}`}>
                                         <img
